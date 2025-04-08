@@ -1,0 +1,44 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "to be used as template for future projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "deploy": "npm run build && gh-pages -d dist",
+    "clean": "rm -rf node_modules package-lock.json",
+    "lint": "eslint",
+    "lint-fix": "eslint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byudhip/template.git"
+  },
+  "keywords": [],
+  "author": "Yudhi Pratama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byudhip/template/issues"
+  },
+  "homepage": "https://github.com/byudhip/template#readme",
+  "devDependencies": {
+    "@eslint/js": "*",
+    "css-loader": "*",
+    "eslint": "*",
+    "eslint-config-prettier": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-prettier": "*",
+    "gh-pages": "*",
+    "globals": "*",
+    "html-loader": "*",
+    "html-webpack-plugin": "*",
+    "prettier": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*",
+    "webpack-merge": "*"
+  }
+}
